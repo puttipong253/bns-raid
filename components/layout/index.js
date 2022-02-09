@@ -34,7 +34,7 @@ const Layout = ({ children }) => {
                         />
                     </div>
 
-                    <div>
+                    {/* <div>
                         <button
                             className="bg-gray-900 rounded-md p-2 mr-5 text-white"
                             // onClick={() => router.push("/addTeam")}
@@ -44,11 +44,11 @@ const Layout = ({ children }) => {
                         <button className="bg-gray-900 rounded-md p-2 first-line:text-white">
                             List Raid
                         </button>
-                    </div>
+                    </div> */}
                 </div>
             </header>
 
-            <div className="w-2/5 mx-auto py-10">{children}</div>
+            <div className="w-3/5 mx-auto py-10">{children}</div>
 
             <footer></footer>
         </>
