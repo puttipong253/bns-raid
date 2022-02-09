@@ -78,8 +78,8 @@ const AddTeam = () => {
                         className="text-black px-3 py-1 w-40 rounded-sm mr-5 focus:outline-none"
                         style={{ height: "33px" }}
                     >
-                        {options.map((item) => (
-                            <option value={item.value}>{item.value}</option>
+                        {options.map((item, index) => (
+                            <option value={item.value} key={index}>{item.value}</option>
                         ))}
                     </select>
                 </div>
@@ -96,7 +96,7 @@ const AddTeam = () => {
                         style={{ height: "33px" }}
                     >
                         {options.map((item) => (
-                            <option value={item.value}>{item.value}</option>
+                            <option value={item.value} key={index}>{item.value}</option>
                         ))}
                     </select>
                 </div>
@@ -113,7 +113,7 @@ const AddTeam = () => {
                         style={{ height: "33px" }}
                     >
                         {options.map((item) => (
-                            <option value={item.value}>{item.value}</option>
+                            <option value={item.value} key={index}>{item.value}</option>
                         ))}
                     </select>
                 </div>
@@ -130,7 +130,7 @@ const AddTeam = () => {
                         style={{ height: "33px" }}
                     >
                         {options.map((item) => (
-                            <option value={item.value}>{item.value}</option>
+                            <option value={item.value} key={index}>{item.value}</option>
                         ))}
                     </select>
                 </div>
@@ -147,7 +147,7 @@ const AddTeam = () => {
                         style={{ height: "33px" }}
                     >
                         {options.map((item) => (
-                            <option value={item.value}>{item.value}</option>
+                            <option value={item.value} key={index}>{item.value}</option>
                         ))}
                     </select>
                 </div>
@@ -164,7 +164,7 @@ const AddTeam = () => {
                         style={{ height: "33px" }}
                     >
                         {options.map((item) => (
-                            <option value={item.value}>{item.value}</option>
+                            <option value={item.value} key={index}>{item.value}</option>
                         ))}
                     </select>
                 </div>
@@ -181,7 +181,7 @@ const AddTeam = () => {
                         style={{ height: "33px" }}
                     >
                         {options.map((item) => (
-                            <option value={item.value}>{item.value}</option>
+                            <option value={item.value} key={index}>{item.value}</option>
                         ))}
                     </select>
                 </div>
@@ -198,7 +198,7 @@ const AddTeam = () => {
                         style={{ height: "33px" }}
                     >
                         {options.map((item) => (
-                            <option value={item.value}>{item.value}</option>
+                            <option value={item.value} key={index}>{item.value}</option>
                         ))}
                     </select>
                 </div>
@@ -215,7 +215,7 @@ const AddTeam = () => {
                         style={{ height: "33px" }}
                     >
                         {options.map((item) => (
-                            <option value={item.value}>{item.value}</option>
+                            <option value={item.value} key={index}>{item.value}</option>
                         ))}
                     </select>
                 </div>
@@ -232,7 +232,7 @@ const AddTeam = () => {
                         style={{ height: "33px" }}
                     >
                         {options.map((item) => (
-                            <option value={item.value}>{item.value}</option>
+                            <option value={item.value} key={index}>{item.value}</option>
                         ))}
                     </select>
                 </div>
@@ -249,7 +249,7 @@ const AddTeam = () => {
                         style={{ height: "33px" }}
                     >
                         {options.map((item) => (
-                            <option value={item.value}>{item.value}</option>
+                            <option value={item.value} key={index}>{item.value}</option>
                         ))}
                     </select>
                 </div>
@@ -266,7 +266,7 @@ const AddTeam = () => {
                         style={{ height: "33px" }}
                     >
                         {options.map((item) => (
-                            <option value={item.value}>{item.value}</option>
+                            <option value={item.value} key={index}>{item.value}</option>
                         ))}
                     </select>
                 </div>
