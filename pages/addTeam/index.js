@@ -1,5 +1,4 @@
 const AddTeam = () => {
-
     const options = [
         {
             value: "Class",
@@ -64,7 +63,9 @@ const AddTeam = () => {
             <div className="bg-gray-800 p-7 rounded-md text-white">
                 <div className="flex justify-between border-b mb-10 pb-5">
                     <div className="text-lg">ADD MEMBER RAID</div>
-                    <button className=" bg-amber-500 px-3 py-1 rounded-md">SAVE</button>
+                    <button className=" bg-amber-500 px-3 py-1 rounded-md">
+                        SAVE
+                    </button>
                 </div>
 
                 <div className="my-4">
@@ -79,7 +80,9 @@ const AddTeam = () => {
                         style={{ height: "33px" }}
                     >
                         {options.map((item, index) => (
-                            <option value={item.value} key={index}>{item.value}</option>
+                            <option value={item.value} key={index}>
+                                {item.value}
+                            </option>
                         ))}
                     </select>
                 </div>
@@ -95,8 +98,10 @@ const AddTeam = () => {
                         className="text-black px-3 py-1 w-40 rounded-sm mr-5 focus:outline-none"
                         style={{ height: "33px" }}
                     >
-                        {options.map((item) => (
-                            <option value={item.value} key={index}>{item.value}</option>
+                        {options.map((item, index) => (
+                            <option value={item.value} key={index}>
+                                {item.value}
+                            </option>
                         ))}
                     </select>
                 </div>
@@ -112,8 +117,10 @@ const AddTeam = () => {
                         className="text-black px-3 py-1 w-40 rounded-sm mr-5 focus:outline-none"
                         style={{ height: "33px" }}
                     >
-                        {options.map((item) => (
-                            <option value={item.value} key={index}>{item.value}</option>
+                        {options.map((item, index) => (
+                            <option value={item.value} key={index}>
+                                {item.value}
+                            </option>
                         ))}
                     </select>
                 </div>
@@ -129,8 +136,10 @@ const AddTeam = () => {
                         className="text-black px-3 py-1 w-40 rounded-sm mr-5 focus:outline-none"
                         style={{ height: "33px" }}
                     >
-                        {options.map((item) => (
-                            <option value={item.value} key={index}>{item.value}</option>
+                        {options.map((item, index) => (
+                            <option value={item.value} key={index}>
+                                {item.value}
+                            </option>
                         ))}
                     </select>
                 </div>
@@ -146,8 +155,10 @@ const AddTeam = () => {
                         className="text-black px-3 py-1 w-40 rounded-sm mr-5 focus:outline-none"
                         style={{ height: "33px" }}
                     >
-                        {options.map((item) => (
-                            <option value={item.value} key={index}>{item.value}</option>
+                        {options.map((item, index) => (
+                            <option value={item.value} key={index}>
+                                {item.value}
+                            </option>
                         ))}
                     </select>
                 </div>
@@ -163,8 +174,10 @@ const AddTeam = () => {
                         className="text-black px-3 py-1 w-40 rounded-sm mr-5 focus:outline-none"
                         style={{ height: "33px" }}
                     >
-                        {options.map((item) => (
-                            <option value={item.value} key={index}>{item.value}</option>
+                        {options.map((item, index) => (
+                            <option value={item.value} key={index}>
+                                {item.value}
+                            </option>
                         ))}
                     </select>
                 </div>
@@ -180,8 +193,10 @@ const AddTeam = () => {
                         className="text-black px-3 py-1 w-40 rounded-sm mr-5 focus:outline-none"
                         style={{ height: "33px" }}
                     >
-                        {options.map((item) => (
-                            <option value={item.value} key={index}>{item.value}</option>
+                        {options.map((item, index) => (
+                            <option value={item.value} key={index}>
+                                {item.value}
+                            </option>
                         ))}
                     </select>
                 </div>
@@ -197,8 +212,10 @@ const AddTeam = () => {
                         className="text-black px-3 py-1 w-40 rounded-sm mr-5 focus:outline-none"
                         style={{ height: "33px" }}
                     >
-                        {options.map((item) => (
-                            <option value={item.value} key={index}>{item.value}</option>
+                        {options.map((item, index) => (
+                            <option value={item.value} key={index}>
+                                {item.value}
+                            </option>
                         ))}
                     </select>
                 </div>
@@ -214,8 +231,10 @@ const AddTeam = () => {
                         className="text-black px-3 py-1 w-40 rounded-sm mr-5 focus:outline-none"
                         style={{ height: "33px" }}
                     >
-                        {options.map((item) => (
-                            <option value={item.value} key={index}>{item.value}</option>
+                        {options.map((item, index) => (
+                            <option value={item.value} key={index}>
+                                {item.value}
+                            </option>
                         ))}
                     </select>
                 </div>
@@ -231,8 +250,10 @@ const AddTeam = () => {
                         className="text-black px-3 py-1 w-40 rounded-sm mr-5 focus:outline-none"
                         style={{ height: "33px" }}
                     >
-                        {options.map((item) => (
-                            <option value={item.value} key={index}>{item.value}</option>
+                        {options.map((item, index) => (
+                            <option value={item.value} key={index}>
+                                {item.value}
+                            </option>
                         ))}
                     </select>
                 </div>
@@ -248,8 +269,10 @@ const AddTeam = () => {
                         className="text-black px-3 py-1 w-40 rounded-sm mr-5 focus:outline-none"
                         style={{ height: "33px" }}
                     >
-                        {options.map((item) => (
-                            <option value={item.value} key={index}>{item.value}</option>
+                        {options.map((item, index) => (
+                            <option value={item.value} key={index}>
+                                {item.value}
+                            </option>
                         ))}
                     </select>
                 </div>
@@ -265,8 +288,10 @@ const AddTeam = () => {
                         className="text-black px-3 py-1 w-40 rounded-sm mr-5 focus:outline-none"
                         style={{ height: "33px" }}
                     >
-                        {options.map((item) => (
-                            <option value={item.value} key={index}>{item.value}</option>
+                        {options.map((item, index) => (
+                            <option value={item.value} key={index}>
+                                {item.value}
+                            </option>
                         ))}
                     </select>
                 </div>
