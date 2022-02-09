@@ -48,7 +48,7 @@ const Layout = ({ children }) => {
                 </div>
             </header>
 
-            <div className="w-3/5 mx-auto py-10">{children}</div>
+            <div className="w-2/5 mx-auto py-10">{children}</div>
 
             <footer></footer>
         </>
