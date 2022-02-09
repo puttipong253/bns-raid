@@ -22,7 +22,10 @@ const Layout = ({ children }) => {
 
             <header className="h-16 bg-gray-200">
                 <div className="px-20 flex justify-between items-center h-full">
-                    <div className="cursor-pointer" onClick={() => router.push("/")}>
+                    <div
+                        className="cursor-pointer"
+                        onClick={() => router.push("/")}
+                    >
                         <Image
                             src="/images/logo_bns_black.png"
                             alt="Picture of the author"
@@ -34,7 +37,7 @@ const Layout = ({ children }) => {
                     <div>
                         <button
                             className="bg-gray-900 rounded-md p-2 mr-5 text-white"
-                            onClick={() => router.push("/addTeam")}
+                            // onClick={() => router.push("/addTeam")}
                         >
                             Add Raid
                         </button>
@@ -45,7 +48,7 @@ const Layout = ({ children }) => {
                 </div>
             </header>
 
-            <div className="w-2/5 mx-auto py-10">{children}</div>
+            <div className="w-3/5 mx-auto py-10">{children}</div>
 
             <footer></footer>
         </>
