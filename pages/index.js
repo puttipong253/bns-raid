@@ -436,30 +436,127 @@ const Home = () => {
         });
     };
 
+    const sumNumber1 =
+        Number(number1Boss1) +
+        Number(number1Boss2) +
+        Number(number1Boss3) +
+        Number(number1Boss4);
+
+    const sumNumber2 =
+        Number(number2Boss1) +
+        Number(number2Boss2) +
+        Number(number2Boss3) +
+        Number(number2Boss4);
+
+    const sumNumber3 =
+        Number(number3Boss1) +
+        Number(number3Boss2) +
+        Number(number3Boss3) +
+        Number(number3Boss4);
+
+    const sumNumber4 =
+        Number(number4Boss1) +
+        Number(number4Boss2) +
+        Number(number4Boss3) +
+        Number(number4Boss4);
+
+    const sumNumber5 =
+        Number(number5Boss1) +
+        Number(number5Boss2) +
+        Number(number5Boss3) +
+        Number(number5Boss4);
+
+    const sumNumber6 =
+        Number(number6Boss1) +
+        Number(number6Boss2) +
+        Number(number6Boss3) +
+        Number(number6Boss4);
+
+    const sumNumber7 =
+        Number(number7Boss1) +
+        Number(number7Boss2) +
+        Number(number7Boss3) +
+        Number(number7Boss4);
+
+    const sumNumber8 =
+        Number(number8Boss1) +
+        Number(number8Boss2) +
+        Number(number8Boss3) +
+        Number(number8Boss4);
+
+    const sumNumber9 =
+        Number(number9Boss1) +
+        Number(number9Boss2) +
+        Number(number9Boss3) +
+        Number(number9Boss4);
+
+    const sumNumber10 =
+        Number(number10Boss1) +
+        Number(number10Boss2) +
+        Number(number10Boss3) +
+        Number(number10Boss4);
+
+    const sumNumber11 =
+        Number(number11Boss1) +
+        Number(number11Boss2) +
+        Number(number11Boss3) +
+        Number(number11Boss4);
+
+    const sumNumber12 =
+        Number(number12Boss1) +
+        Number(number12Boss2) +
+        Number(number12Boss3) +
+        Number(number12Boss4);
+
+    const sumAll =
+        sumNumber1 +
+        sumNumber2 +
+        sumNumber3 +
+        sumNumber4 +
+        sumNumber5 +
+        sumNumber6 +
+        sumNumber7 +
+        sumNumber8 +
+        sumNumber9 +
+        sumNumber10 +
+        sumNumber11 +
+        sumNumber12;
+
+    const date = new Date();
+
+    const result = date.toLocaleDateString("th-TH", {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+    });
+
     return (
         <>
             <div className="bg-gray-800 p-7 rounded-md text-white">
                 <div className="flex justify-between border-b mb-5 pb-5">
-                    <div className="text-lg">GOLD</div>
+                    <div className="text-lg">
+                        ตารางเงินบิท{" "}
+                        <span className="text-sm ml-5">( {result} )</span>
+                    </div>
                     <div>
                         <button
                             className=" bg-red-500 px-3 py-1 rounded-md mr-2"
                             onClick={onClear}
                         >
-                            CLEAR
+                            รีเซ็ต
                         </button>
 
                         <button
                             className=" bg-amber-500 px-3 py-1 rounded-md"
                             onClick={onSubmit}
                         >
-                            CALCULATE
+                            คำนวณ
                         </button>
                     </div>
                 </div>
                 <div>
                     <div>
-                        <label htmlFor="">Member Count</label>
+                        <label htmlFor="">จำนวนสมาชิก</label>
                         <select
                             value={memberCount}
                             onChange={(e) => setMembercount(e.target.value)}
@@ -528,11 +625,7 @@ const Home = () => {
                                     placeholder="Gold 4"
                                 />
                                 <span className="ml-3">
-                                    เงินที่ต้องจ่าย :{" "}
-                                    {Number(number1Boss1) +
-                                        Number(number1Boss2) +
-                                        Number(number1Boss3) +
-                                        Number(number1Boss4)}
+                                    เงินที่ต้องจ่าย : {sumNumber1}
                                 </span>
                             </div>
                             <div>เงินที่ได้ : {resultNumber1}</div>
@@ -587,11 +680,7 @@ const Home = () => {
                                     placeholder="Gold 4"
                                 />
                                 <span className="ml-3">
-                                    เงินที่ต้องจ่าย :{" "}
-                                    {Number(number2Boss1) +
-                                        Number(number2Boss2) +
-                                        Number(number2Boss3) +
-                                        Number(number2Boss4)}
+                                    เงินที่ต้องจ่าย : {sumNumber2}
                                 </span>
                             </div>
                             <div>เงินที่ได้ : {resultNumber2}</div>
@@ -646,11 +735,7 @@ const Home = () => {
                                     placeholder="Gold 4"
                                 />
                                 <span className="ml-3">
-                                    เงินที่ต้องจ่าย :{" "}
-                                    {Number(number3Boss1) +
-                                        Number(number3Boss2) +
-                                        Number(number3Boss3) +
-                                        Number(number3Boss4)}
+                                    เงินที่ต้องจ่าย : {sumNumber3}
                                 </span>
                             </div>
                             <div>เงินที่ได้ : {resultNumber3}</div>
@@ -705,11 +790,7 @@ const Home = () => {
                                     placeholder="Gold 4"
                                 />
                                 <span className="ml-3">
-                                    เงินที่ต้องจ่าย :{" "}
-                                    {Number(number4Boss1) +
-                                        Number(number4Boss2) +
-                                        Number(number4Boss3) +
-                                        Number(number4Boss4)}
+                                    เงินที่ต้องจ่าย : {sumNumber4}
                                 </span>
                             </div>
                             <div>เงินที่ได้ : {resultNumber4}</div>
@@ -764,11 +845,7 @@ const Home = () => {
                                     placeholder="Gold 4"
                                 />
                                 <span className="ml-3">
-                                    เงินที่ต้องจ่าย :{" "}
-                                    {Number(number5Boss1) +
-                                        Number(number5Boss2) +
-                                        Number(number5Boss3) +
-                                        Number(number5Boss4)}
+                                    เงินที่ต้องจ่าย : {sumNumber5}
                                 </span>
                             </div>
                             <div>เงินที่ได้ : {resultNumber5}</div>
@@ -823,11 +900,7 @@ const Home = () => {
                                     placeholder="Gold 4"
                                 />
                                 <span className="ml-3">
-                                    เงินที่ต้องจ่าย :{" "}
-                                    {Number(number6Boss1) +
-                                        Number(number6Boss2) +
-                                        Number(number6Boss3) +
-                                        Number(number6Boss4)}
+                                    เงินที่ต้องจ่าย : {sumNumber6}
                                 </span>
                             </div>
                             <div>เงินที่ได้ : {resultNumber6}</div>
@@ -882,11 +955,7 @@ const Home = () => {
                                     placeholder="Gold 4"
                                 />
                                 <span className="ml-3">
-                                    เงินที่ต้องจ่าย :{" "}
-                                    {Number(number7Boss1) +
-                                        Number(number7Boss2) +
-                                        Number(number7Boss3) +
-                                        Number(number7Boss4)}
+                                    เงินที่ต้องจ่าย : {sumNumber7}
                                 </span>
                             </div>
                             <div>เงินที่ได้ : {resultNumber7}</div>
@@ -941,11 +1010,7 @@ const Home = () => {
                                     placeholder="Gold 4"
                                 />
                                 <span className="ml-3">
-                                    เงินที่ต้องจ่าย :{" "}
-                                    {Number(number8Boss1) +
-                                        Number(number8Boss2) +
-                                        Number(number8Boss3) +
-                                        Number(number8Boss4)}
+                                    เงินที่ต้องจ่าย : {sumNumber8}
                                 </span>
                             </div>
                             <div>เงินที่ได้ : {resultNumber8}</div>
@@ -981,7 +1046,7 @@ const Home = () => {
                                     value={number9Boss2}
                                     placeholder="Gold 2"
                                 />
-                               <input
+                                <input
                                     type="number"
                                     className="text-black rounded-sm focus:outline-none px-1 mr-2 w-28"
                                     onChange={(e) =>
@@ -1000,11 +1065,7 @@ const Home = () => {
                                     placeholder="Gold 4"
                                 />
                                 <span className="ml-3">
-                                    เงินที่ต้องจ่าย :{" "}
-                                    {Number(number9Boss1) +
-                                        Number(number9Boss2) +
-                                        Number(number9Boss3) +
-                                        Number(number9Boss4)}
+                                    เงินที่ต้องจ่าย : {sumNumber9}
                                 </span>
                             </div>
                             <div>เงินที่ได้ : {resultNumber9}</div>
@@ -1059,11 +1120,7 @@ const Home = () => {
                                     placeholder="Gold 4"
                                 />
                                 <span className="ml-3">
-                                    เงินที่ต้องจ่าย :{" "}
-                                    {Number(number10Boss1) +
-                                        Number(number10Boss2) +
-                                        Number(number10Boss3) +
-                                        Number(number10Boss4)}
+                                    เงินที่ต้องจ่าย : {sumNumber10}
                                 </span>
                             </div>
                             <div>เงินที่ได้ : {resultNumber10}</div>
@@ -1099,7 +1156,7 @@ const Home = () => {
                                     value={number11Boss2}
                                     placeholder="Gold 2"
                                 />
-                               <input
+                                <input
                                     type="number"
                                     className="text-black rounded-sm focus:outline-none px-1 mr-2 w-28"
                                     onChange={(e) =>
@@ -1118,11 +1175,7 @@ const Home = () => {
                                     placeholder="Gold 4"
                                 />
                                 <span className="ml-3">
-                                    เงินที่ต้องจ่าย :{" "}
-                                    {Number(number11Boss1) +
-                                        Number(number11Boss2) +
-                                        Number(number11Boss3) +
-                                        Number(number11Boss4)}
+                                    เงินที่ต้องจ่าย : {sumNumber11}
                                 </span>
                             </div>
                             <div>เงินที่ได้ : {resultNumber11}</div>
@@ -1177,17 +1230,14 @@ const Home = () => {
                                     placeholder="Gold 4"
                                 />
                                 <span className="ml-3">
-                                    เงินที่ต้องจ่าย :{" "}
-                                    {Number(number12Boss1) +
-                                        Number(number12Boss2) +
-                                        Number(number12Boss3) +
-                                        Number(number12Boss4)}
+                                    เงินที่ต้องจ่าย : {sumNumber12}
                                 </span>
                             </div>
                             <div>เงินที่ได้ : {resultNumber12}</div>
                         </div>
                     )}
                 </div>
+                <div className="flex justify-end mt-10">ยอดรวมเงินบิท : {sumAll}</div>
             </div>
         </>
     );
